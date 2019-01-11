@@ -3,9 +3,9 @@ import logo from './logo.svg'
 import './App.css'
 
 class App extends Component {
-  showWhatIsSection = () => {
-    let whatIsLocalistSection = document.querySelector('.what-is')
-    whatIsLocalistSection.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  showMyWorkSection = () => {
+    let myWorkSection = document.querySelector('.my-work')
+    myWorkSection.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
   showHowItWorksSection = () => {
@@ -19,8 +19,9 @@ class App extends Component {
         <nav className="nav-bar">
           <p className="logo">TOBIAS NORTON</p>
           <div className="links">
-            <p onClick={this.showHowItWorksSection}>Selected Works</p>
-            <a href="#">Github</a> <a href="#">LinkedIn</a> <a href="#" />
+            <p>About Me</p>
+            <p onClick={this.showMyWorkSection}>Selected Works</p>
+            <a href="#">GitHub</a> <a href="#">LinkedIn</a>
           </div>
           <div className="hamburger">
             <span />
@@ -41,8 +42,17 @@ class App extends Component {
           {/* <button>Join the Family</button> */}
         </section>
 
-        <section className="what-is">
-          <h1 onClick={this.showWhatIsSection}>See My Work</h1>
+        <section className="about-me">
+          <img src="./711.jpg" className="portrait" />
+          <p>
+            Hi, I'm Toby. I am a software developer from St. Petersburg, Florida. This is an HSL
+            (hue, saturation, light) color picker for CSS. It generates a random color upon the
+            click of a button and custom colors when the user drags the sliders.
+          </p>
+        </section>
+
+        <section className="my-work">
+          <h1 onClick={this.showMyWorkSection}>See My Work</h1>
           <div className="box-container">
             <div className="box">
               <img src="./ColorPicker.gif" />
@@ -84,11 +94,7 @@ class App extends Component {
           </div>
         </section>
 
-        <section>
-          <img src="#" className="portrait" />
-        </section>
-
-        <section className="how-it-works">
+        {/* <section className="how-it-works">
           <h1 onClick={this.showHowItWorksSection}>How Does It Work?</h1>
           <div className="box-container">
             <div className="box">
@@ -119,7 +125,7 @@ class App extends Component {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
       </body>
     )
   }
