@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <body>
         <nav className="nav-bar">
-          <p className="logo">Tobias Norton</p>
+          <p className="logo">TOBIAS NORTON</p>
           <div className="links">
             <p onClick={this.showHowItWorksSection}>Selected Works</p>
             <a href="#">Github</a> <a href="#">LinkedIn</a> <a href="#" />
@@ -36,12 +36,13 @@ class App extends Component {
             <span>Localist</span>
           </p> */}
           <p className="title">TOBIAS NORTON</p>
-          <p className="welcome">Full-stack Web Developer</p>
+          <div className="sexy-line" />
+          <p className="caption">Full-stack Web Developer</p>
           {/* <button>Join the Family</button> */}
         </section>
 
         <section className="what-is">
-          <h1 onClick={this.showWhatIsSection}>What is Localist?</h1>
+          <h1 onClick={this.showWhatIsSection}>See My Work</h1>
           <div className="box-container">
             <div className="box">
               <img src="./ColorPicker.gif" />
@@ -81,6 +82,10 @@ class App extends Component {
               </p>
             </div>
           </div>
+        </section>
+
+        <section>
+          <img src="#" className="portrait" />
         </section>
 
         <section className="how-it-works">

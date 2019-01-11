@@ -27,7 +27,7 @@ code {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: calc(100vh - 8em);
+  min-height: calc(100vh - 7em);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,21 +41,28 @@ code {
   font-size: 3rem;
   color: white;
   font-weight: 700;
+  margin: 1rem;
 }
 
-.welcome {
+.sexy-line {
+  background-color: white;
+  height: 2px;
+  width: 5rem;
+}
+
+.caption {
   color: white;
   text-align: center;
   font-size: 2rem;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  margin: 0;
+  margin: 1rem;
 }
 
-.welcome span {
+/* .caption span {
   font-family: 'Good Vibes';
   font-size: 7rem;
-}
+} */
 
 .nav-bar {
   text-align: right;
@@ -71,6 +78,7 @@ code {
 }
 
 .nav-bar p {
+  font-family: 'Montserrat', sans-serif;
   padding-left: 1.5rem;
   margin-right: 1rem;
 }
@@ -83,7 +91,7 @@ code {
   text-decoration: none;
   color: white;
   margin: 0 1rem 0 1rem;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
 
@@ -115,7 +123,8 @@ code {
 }
 
 .logo {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   font-size: 1rem;
   margin: 0.8rem;
 }
@@ -126,6 +135,7 @@ code {
 }
 
 h1 {
+  font-size: 1.3rem;
   color: white;
   margin: 0;
   font-weight: normal;
@@ -179,7 +189,7 @@ button {
 
 .what-is h1,
 .how-it-works h1 {
-  padding: 1.5rem 0 1rem 0;
+  padding: 1rem 0 1rem 0;
   line-height: 1.5rem;
   font-family: 'Lato', sans-serif;
 }
