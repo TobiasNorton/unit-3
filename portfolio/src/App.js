@@ -17,10 +17,10 @@ class App extends Component {
     return (
       <body>
         <nav className="nav-bar">
-          <p className="logo">Localist</p>
+          <p className="logo">Tobias Norton</p>
           <div className="links">
-            <p onClick={this.showHowItWorksSection}>How Does It Work?</p>
-            <a href="#">Join</a> <a href="#">Log In</a> <a href="#" />
+            <p onClick={this.showHowItWorksSection}>Selected Works</p>
+            <a href="#">Github</a> <a href="#">LinkedIn</a> <a href="#" />
           </div>
           <div className="hamburger">
             <span />
@@ -30,48 +30,54 @@ class App extends Component {
         </nav>
 
         <section className="main">
-          <p className="welcome">
+          {/* <p className="welcome">
             Welcome to
             <br />
             <span>Localist</span>
-          </p>
-          <h3 className="main-caption">Full-stack Web Developer</h3>
-          <button>Join the Family</button>
+          </p> */}
+          <p className="title">TOBIAS NORTON</p>
+          <p className="welcome">Full-stack Web Developer</p>
+          {/* <button>Join the Family</button> */}
         </section>
 
         <section className="what-is">
           <h1 onClick={this.showWhatIsSection}>What is Localist?</h1>
           <div className="box-container">
             <div className="box">
-              <img src="./Waterfall.jpg" />
-              <p className="header">Experience Culture</p>
+              <img src="./ColorPicker.gif" />
+              <p className="header">HSL Color Picker</p>
               <p className="body">
-                Localist provides a unique platform to meet with locals anywhere on the planet so
-                that travelers can get a richer experience and see their travel destinations up
-                close and personal. Find the best street food, the local music scene, the best
-                views, the hidden gems that only the locals would know about. Localist seeks to help
-                you find a richer cultural experience.
+                This is an HSL (hue, saturation, light) color picker for CSS. It generates a random
+                color upon the click of a button and custom colors when the user drags the sliders.
+                It also displays and updates a CSS color code so that users may copy it for use in
+                their own projects. It responds to user events and uses state in React to drive
+                changes to the user interface.
               </p>
             </div>
             <div className="box">
-              <img src="./meetpeoplesolotravel.jpeg" />
-              <p className="header">Locals Can Hang Out With Travelers</p>
+              <img src="./Minesweeper.gif" />
+              <p className="header">Minesweeper</p>
               <p className="body">
-                Show off your town! Remember, those from other countries don't have the same context
-                as you; your town might be cooler than you think, and it could be a great
-                opportunity to hang out with someone from another country. The best part is, it's
-                non-committal, so no one is obligated to do anything beyond the initial hang out.
-                Meet up for lunch, a beer or for a 3-day hike. It's up to you.
+                Users can choose their difficulty and play the classic Minesweeper game. Left
+                clicking or right clicking will check or flag a cell, respectively. Checking a mine
+                will result in a game over. Working with an API, the Axios library is used to POST
+                requests. The state is then updated and changes are passed down to React components
+                and the user interface updates.
               </p>
             </div>
             <div className="box">
-              <img src="./GroupSitting.jpeg" />
-              <p className="header">What Localist is Not</p>
+              <img src="./Blackjack.gif" />
+              <p className="header">Blackjack</p>
               <p className="body">
-                Localist is not a dating website or a platform for couch sharing, but hey, it's a
-                free world! If you should choose to use it for such purposes, more power to you. We
-                just want Localists on both sides to have the best cultural experience they can, and
-                know that the level of commitment is completely up to you and other Localists.
+                Blackjack! The player with the highest card sum wins. More then 21 results in a
+                loss, and equal to 21 results in an automatic win (Blackjack). When the player hits
+                the stay button, the dealer must draw until their cards total at least 17. From here
+                the dealer will either lose by going over 21, win with a high score or win with a
+                Blackjack. Built entirely with core JavaScript and no frameworks. It was assigned as
+                an exercise for using conditional logic to update DOM elements. I'm happy to say
+                that the instructor liked my CSS and code enough that he later used my project as a
+                template to demonstrate for the class how to implement React.js and a playing cards
+                API.
               </p>
             </div>
           </div>
