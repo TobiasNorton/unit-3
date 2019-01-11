@@ -23,7 +23,7 @@ class App extends Component {
     return (
       <body>
         <nav className="nav-bar">
-          <p className="logo">TOBIAS NORTON</p>
+          <div className="logo">TOBIAS NORTON</div>
 
           <div className="links">
             <Menu right className="react-burger">
@@ -77,9 +77,13 @@ class App extends Component {
         <section className="about-me">
           <img src="./711.jpg" className="portrait" />
           <p>
-            Hi, I'm Toby. I am a software developer from St. Petersburg, Florida. This is an HSL
-            (hue, saturation, light) color picker for CSS. It generates a random color upon the
-            click of a button and custom colors when the user drags the sliders.
+            Hi, I'm Toby. I am a software developer from St. Petersburg, Florida. I graduated from
+            the Savannah College of Art and Design with a BFA in Illustration and did freelance work
+            for roughly 8 years. In recent years I discovered my passion for coding. I recently
+            graduated from Suncoast Developers Guild, a 12-week fully-immersive coding bootcamp with
+            emphasis on both the front and back-ends, and I could not be happier. When I'm not
+            coding you can find my behind my guitar, working on some illustrations or practicing
+            Kung Fu.
           </p>
         </section>
 
