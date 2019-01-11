@@ -2,7 +2,13 @@ import React, { Component } from 'react'
 import logo from './logo.svg'
 import './App.css'
 
+import { slide as Menu } from 'react-burger-menu'
+
 class App extends Component {
+  showSettings(event) {
+    event.preventDefault()
+  }
+
   showMyWorkSection = () => {
     let myWorkSection = document.querySelector('.my-work')
     myWorkSection.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -18,16 +24,42 @@ class App extends Component {
       <body>
         <nav className="nav-bar">
           <p className="logo">TOBIAS NORTON</p>
+
           <div className="links">
+            <Menu right className="react-burger">
+              <a id="home" className="menu-item" href="/">
+                Home
+              </a>
+              <a id="about" className="menu-item" href="/about">
+                About Me
+              </a>
+              <a id="contact" className="menu-item" href="/contact">
+                My Work
+              </a>
+              <a id="contact" className="menu-item" href="/contact">
+                GitHub
+              </a>
+              <a id="contact" className="menu-item" href="/contact">
+                LinkedIn
+              </a>
+              <a onClick={this.showSettings} className="menu-item--small" href="">
+                Contact
+              </a>
+            </Menu>
             <p>About Me</p>
             <p onClick={this.showMyWorkSection}>Selected Works</p>
-            <a href="#">GitHub</a> <a href="#">LinkedIn</a>
+            <a href="https://github.com/TobiasNorton" target="_blank">
+              GitHub
+            </a>{' '}
+            <a href="https://www.linkedin.com/in/tobiasnorton" target="_blank">
+              LinkedIn
+            </a>
           </div>
-          <div className="hamburger">
+          {/* <div className="hamburger">
             <span />
             <span />
             <span />
-          </div>
+          </div> */}
         </nav>
 
         <section className="main">
