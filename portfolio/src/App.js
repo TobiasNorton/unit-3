@@ -47,7 +47,7 @@ class App extends Component {
               </a>
             </Menu>
             <p>About Me</p>
-            <p onClick={this.showMyWorkSection}>Selected Works</p>
+            <p onClick={this.showMyWorkSection}>My Work</p>
             <a href="https://github.com/TobiasNorton" target="_blank">
               GitHub
             </a>{' '}
