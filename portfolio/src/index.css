@@ -27,12 +27,21 @@ code {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: calc(100vh - 7em);
+  min-height: calc(100vh - 3.5em);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   /* position: relative; */
+}
+
+.scroll-tab {
+  width: 6rem;
+  height: 3rem;
+  border-radius: 15px 15px 0 0;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
 }
 
 .title {
@@ -42,6 +51,7 @@ code {
   color: white;
   font-weight: 700;
   margin: 1rem;
+  text-align: center;
 }
 
 .sexy-line {
@@ -58,11 +68,6 @@ code {
   font-weight: 300;
   margin: 1rem;
 }
-
-/* .caption span {
-  font-family: 'Good Vibes';
-  font-size: 7rem;
-} */
 
 .nav-bar {
   text-align: right;
@@ -181,20 +186,43 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: hsla(185, 60%, 94%, 1);
+  min-height: 100vh;
+}
+
+.threshold {
+  background-color: black;
+  width: 100%;
+  padding: 3rem 0 3rem 0;
+  margin: 0;
+}
+
+.about-me-header {
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-size: 1.5rem;
+  margin: 2rem;
+}
+
+.about-me.sexy-line {
+  background-color: black;
+  height: 2px;
+  width: 5rem;
 }
 
 .portrait {
   width: 18rem;
   border-radius: 100%;
-  margin: 5rem 0 2rem 0;
+  margin: 2rem 0 2rem 0;
 }
 
 .about-me p {
-  color: white;
-  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-family: 'Lato', sans-serif;
   max-width: 32rem;
   text-align: center;
   margin-bottom: 5rem;
+  line-height: 1.5rem;
 }
 
 .what-is {
@@ -284,7 +312,7 @@ button {
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-  position: fixed;
+  position: absolute;
   width: 36px;
   height: 30px;
   /* left: 36px; */
@@ -339,13 +367,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Wrapper for item list */
 .bm-item-list {
   color: #b8b7ad;
-  padding: 0.8em;
+  /* padding: 0.8em; */
 }
 
 /* Individual item */
 .bm-item {
   display: inline-block;
-  margin: 3rem;
 }
 
 /* Styling of overlay */

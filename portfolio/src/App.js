@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
 import './App.css'
+import arrow from './014-CaretDown-512.png'
 
 import { slide as Menu } from 'react-burger-menu'
 
@@ -72,22 +72,26 @@ class App extends Component {
           <div className="sexy-line" />
           <p className="caption">Full-stack Web Developer</p>
           {/* <button>Join the Family</button> */}
+          {/* <div className="scroll-tab" /> */}
+          {/* <img src={arrow} className="arrow" /> */}
         </section>
 
         <section className="about-me">
+          <div className="threshold" />
+          <div className="about-me-header">About Me</div>
+          <div className="sexy-line" />
           <img src="./711.jpg" className="portrait" />
           <p>
             Hi, I'm Toby. I am a software developer from St. Petersburg, Florida. I graduated from
             the Savannah College of Art and Design with a BFA in Illustration and did freelance work
-            for roughly 8 years. In recent years I discovered my passion for coding. I recently
-            graduated from Suncoast Developers Guild, a 12-week fully-immersive coding bootcamp with
-            emphasis on both the front and back-ends, and I could not be happier. When I'm not
-            coding you can find my behind my guitar, working on some illustrations or practicing
-            Kung Fu.
+            for roughly 8 years. In recent years I discovered my passion for coding and ended up
+            attending the program at Suncoast Developers Guild, a 12-week fully-immersive coding
+            bootcamp with emphasis on both the front and back-ends. When I'm not coding you can find
+            me behind my guitar, working on my art or practicing Kung Fu.
           </p>
         </section>
 
-        <section className="my-work">
+        {/* <section className="my-work">
           <h1 onClick={this.showMyWorkSection}>See My Work</h1>
           <div className="box-container">
             <div className="box">
@@ -128,7 +132,7 @@ class App extends Component {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* <section className="how-it-works">
           <h1 onClick={this.showHowItWorksSection}>How Does It Work?</h1>
