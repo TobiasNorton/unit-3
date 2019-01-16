@@ -94,6 +94,16 @@ class App extends Component {
         <section className="portfolio">
           <div className="portfolio-header">Portfolio</div>
           <div className="about-me-line" />
+          <div className="thumbnail-container">
+            <img src="./localist.jpg" className="portfolio-image" />
+            <img src="./favorite-artists-2.jpg" className="portfolio-image" />
+            <img src="./hsl-color-2.jpg" className="portfolio-image" />
+            <img src="./minesweeper.jpg" className="portfolio-image" />
+            <img src="./blackjack.jpg" className="portfolio-image" />
+            <img src="./roshambo.jpg" className="portfolio-image" />
+            <img src="./star-wars.jpg" className="portfolio-image" />
+            <img src="./1989.jpg" className="portfolio-image" />
+          </div>
         </section>
 
         {/* <section className="my-work">
