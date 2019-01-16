@@ -115,9 +115,9 @@ class App extends Component {
               <i class="fas fa-4x fa-gem text-primary mb-3 sr-icon-1" />
               <p className="tech-caption">Ruby</p>
             </div>
-            <div className="tech">
+            {/* <div className="tech">
               <p className="rails-caption">Rails</p>
-            </div>
+            </div> */}
             <div className="tech">
               <i class="fab fa-react" />
               <p className="tech-caption">React.js</p>
