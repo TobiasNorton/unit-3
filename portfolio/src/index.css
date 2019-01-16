@@ -182,6 +182,34 @@ button {
   margin-bottom: 2rem;
 }
 
+.arrow {
+  width: 3rem;
+  justify-self: flex-end;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* margin: 0 auto 0 auto; */
+  transform-origin: bottom;
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .about-me {
   background-color: white;
   display: flex;

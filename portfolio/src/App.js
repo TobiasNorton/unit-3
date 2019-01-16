@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
-import arrow from './014-CaretDown-512.png'
+import arrow from './white_arrow.png'
 
 import { slide as Menu } from 'react-burger-menu'
 
@@ -74,7 +74,8 @@ class App extends Component {
           {/* <button>Join the Family</button> */}
           {/* <div className="scroll-tab" /> */}
           {/* <img src={arrow} className="arrow" /> */}
-          <i class="fas fa-sort-down" />
+          {/* <i class="fas fa-sort-down" /> */}
+          <img src={arrow} className="arrow bounce" />
         </section>
 
         <section className="about-me">
