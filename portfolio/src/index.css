@@ -255,6 +255,59 @@ button {
   box-shadow: 0px 4px 4px hsla(185, 0%, 20%, 0.4);
 }
 
+.technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 3rem;
+}
+
+.technology-header {
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-size: 1.5rem;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.tech-line {
+  background-color: black;
+  height: 1px;
+  width: 3rem;
+}
+
+img.rails {
+  color: black;
+  width: 8rem;
+}
+
+p.rails-caption {
+  position: absolute;
+  bottom: 3rem;
+}
+
+.tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+}
+
+.tech i {
+  /* width: 3rem; */
+  font-size: 3.5rem;
+}
+
+.tech p {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
 .what-is {
   /* min-height: 100vh; */
   /* background-color: hsla(127, 50%, 50%, 1); */

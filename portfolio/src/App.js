@@ -74,6 +74,7 @@ class App extends Component {
           {/* <button>Join the Family</button> */}
           {/* <div className="scroll-tab" /> */}
           {/* <img src={arrow} className="arrow" /> */}
+          <i class="fas fa-sort-down" />
         </section>
 
         <section className="about-me">
@@ -103,6 +104,44 @@ class App extends Component {
             <img src="./roshambo.jpg" className="portfolio-image" />
             <img src="./star-wars.jpg" className="portfolio-image" />
             <img src="./1989.jpg" className="portfolio-image" />
+          </div>
+        </section>
+
+        <section className="technologies">
+          <div className="technology-header">Technologies</div>
+          <div className="tech-line" />
+          <div className="tech-container">
+            <div className="tech">
+              <i class="fas fa-4x fa-gem text-primary mb-3 sr-icon-1" />
+              <p className="tech-caption">Ruby</p>
+            </div>
+            <div className="tech">
+              <p className="rails-caption">Rails</p>
+            </div>
+            <div className="tech">
+              <i class="fab fa-react" />
+              <p className="tech-caption">React.js</p>
+            </div>
+            <div className="tech">
+              <i class="fab fa-js-square" />
+              <p className="tech-caption">JavaScript</p>
+            </div>
+            <div className="tech">
+              <i class="fab fa-css3-alt" />
+              <p className="tech-caption">CSS3</p>
+            </div>
+            <div className="tech">
+              <i class="fab fa-html5" />
+              <p className="tech-caption">HTML5</p>
+            </div>
+            {/* <div className="tech">
+              <i class="fab fa-html5" />
+              <p className="tech-caption">HTML5</p>
+            </div> */}
+            {/* <div className="tech">
+              <i class="fab fa-adobe" />
+              <p className="tech-caption">Adobe</p>
+            </div> */}
           </div>
         </section>
 
