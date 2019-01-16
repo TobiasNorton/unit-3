@@ -50,7 +50,7 @@ class App extends Component {
             <p onClick={this.showMyWorkSection}>My Work</p>
             <a href="https://github.com/TobiasNorton" target="_blank">
               GitHub
-            </a>{' '}
+            </a>
             <a href="https://www.linkedin.com/in/tobiasnorton" target="_blank">
               LinkedIn
             </a>
@@ -79,16 +79,21 @@ class App extends Component {
         <section className="about-me">
           <div className="threshold" />
           <div className="about-me-header">About Me</div>
-          <div className="sexy-line" />
+          <div className="about-me-line" />
           <img src="./711.jpg" className="portrait" />
           <p>
             Hi, I'm Toby. I am a software developer from St. Petersburg, Florida. I graduated from
             the Savannah College of Art and Design with a BFA in Illustration and did freelance work
-            for roughly 8 years. In recent years I discovered my passion for coding and ended up
-            attending the program at Suncoast Developers Guild, a 12-week fully-immersive coding
-            bootcamp with emphasis on both the front and back-ends. When I'm not coding you can find
-            me behind my guitar, working on my art or practicing Kung Fu.
+            for roughly 8 years. In recent years I discovered my passion for coding and made the
+            life-changing decision to attend the program at Suncoast Developers Guild, a 12-week
+            fully-immersive coding bootcamp with emphasis on both the front and back-ends. When I'm
+            not coding you can find me behind my guitar, working on my art or practicing Kung Fu.
           </p>
+        </section>
+
+        <section className="portfolio">
+          <div className="portfolio-header">Portfolio</div>
+          <div className="about-me-line" />
         </section>
 
         {/* <section className="my-work">
