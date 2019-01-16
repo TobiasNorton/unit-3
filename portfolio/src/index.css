@@ -183,12 +183,14 @@ button {
 }
 
 .arrow {
-  width: 3rem;
+  width: 2.5rem;
   justify-self: flex-end;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   /* margin: 0 auto 0 auto; */
-  transform-origin: bottom;
+  /* transform-origin: bottom; */
+  position: absolute;
+  bottom: 30px;
 }
 
 .bounce {
@@ -200,7 +202,7 @@ button {
     transform: translateY(0);
   }
   30% {
-    transform: translateY(-20px);
+    transform: translateY(-15px);
   }
   50% {
     transform: translateY(0);

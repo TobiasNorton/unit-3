@@ -9,9 +9,9 @@ class App extends Component {
     event.preventDefault()
   }
 
-  showMyWorkSection = () => {
-    let myWorkSection = document.querySelector('.my-work')
-    myWorkSection.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  showAboutMe = () => {
+    let aboutMe = document.querySelector('.about-me')
+    aboutMe.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
   showHowItWorksSection = () => {
@@ -46,7 +46,7 @@ class App extends Component {
                 Contact
               </a>
             </Menu>
-            <p>About Me</p>
+            <p onClick={this.showAboutMe}>About Me</p>
             <p onClick={this.showMyWorkSection}>My Work</p>
             <a href="https://github.com/TobiasNorton" target="_blank">
               GitHub
@@ -75,7 +75,7 @@ class App extends Component {
           {/* <div className="scroll-tab" /> */}
           {/* <img src={arrow} className="arrow" /> */}
           {/* <i class="fas fa-sort-down" /> */}
-          <img src={arrow} className="arrow bounce" />
+          <img src={arrow} className="arrow bounce" onClick={this.showAboutMe} />
         </section>
 
         <section className="about-me">
@@ -97,9 +97,21 @@ class App extends Component {
           <div className="portfolio-header">Portfolio</div>
           <div className="about-me-line" />
           <div className="thumbnail-container">
-            <img src="./localist.jpg" className="portfolio-image" />
-            <img src="./favorite-artists-2.jpg" className="portfolio-image" />
-            <img src="./hsl-color-2.jpg" className="portfolio-image" />
+            <a href="#">
+              <img src="./localist.jpg" className="portfolio-image" />
+            </a>
+            <a href="#">
+              <img src="./favorite-artists-2.jpg" className="portfolio-image" />
+            </a>
+            <a href="#">
+              <img src="./hsl-color-2.jpg" className="portfolio-image" />
+            </a>
+            <a href="#" />
+            <a href="#" />
+            <a href="#" />
+            <a href="#" />
+            <a href="#" />
+
             <img src="./minesweeper.jpg" className="portfolio-image" />
             <img src="./blackjack.jpg" className="portfolio-image" />
             <img src="./roshambo.jpg" className="portfolio-image" />
