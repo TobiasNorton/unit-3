@@ -283,10 +283,14 @@ button {
   margin: 3rem 0 3rem 0;
 }
 
-.portfolio-image {
+.thumbnail {
   width: 20rem;
   margin: 1.5rem;
   box-shadow: 0px 4px 4px hsla(185, 0%, 20%, 0.4);
+}
+
+.thumbnail:hover {
+  color: black;
 }
 
 .technologies {

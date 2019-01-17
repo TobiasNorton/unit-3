@@ -97,30 +97,47 @@ class App extends Component {
           <div className="portfolio-header">Portfolio</div>
           <div className="about-me-line" />
           <div className="thumbnail-container">
-            <a href="#">
-              <img src="./localist.jpg" className="portfolio-image" />
-            </a>
-            <a href="http://tobiasnorton-favorite-artists.surge.sh/" target="_blank">
-              <img src="./favorite-artists-2.jpg" className="portfolio-image" />
-            </a>
-            <a href="http://hsl-color-picker.surge.sh/" target="_blank">
-              <img src="./hsl-color-2.jpg" className="portfolio-image" />
-            </a>
-            <a href="http://tobiasnorton-minesweeper.surge.sh/" target="_blank">
-              <img src="./minesweeper.jpg" className="portfolio-image" />
-            </a>
-            <a href="http://blackjack-tobiasnorton.surge.sh/" target="_blank">
-              <img src="./blackjack.jpg" className="portfolio-image" />
-            </a>
-            <a href="http://roshambo-tobiasnorton.surge.sh/" target="_blank">
-              <img src="./roshambo.jpg" className="portfolio-image" />
-            </a>
-            <a href="http://tobiasnorton-star-wars-characters.surge.sh/" target="_blank">
-              <img src="./star-wars.jpg" className="portfolio-image" />
-            </a>
-            <a href="http://tobiasnorton-made-in-1989.surge.sh/" target="_blank">
-              <img src="./1989.jpg" className="portfolio-image" />
-            </a>
+            <div>
+              <a href="#">
+                <img src="./localist.jpg" className="thumbnail " />
+              </a>
+            </div>
+            <div>
+              <a href="http://tobiasnorton-favorite-artists.surge.sh/" target="_blank">
+                <img src="./favorite-artists-2.jpg" className="thumbnail" />
+              </a>
+            </div>
+            <div>
+              <a href="http://hsl-color-picker.surge.sh/" target="_blank">
+                <img src="./hsl-color-2.jpg" className="thumbnail" />
+              </a>
+            </div>
+            <div>
+              <a href="http://tobiasnorton-minesweeper.surge.sh/" target="_blank">
+                <img src="./minesweeper.jpg" className="thumbnail" />
+              </a>
+            </div>
+            <div>
+              <a href="http://blackjack-tobiasnorton.surge.sh/" target="_blank">
+                <img src="./blackjack.jpg" className="thumbnail" />
+              </a>
+            </div>
+            <div>
+              <a href="http://roshambo-tobiasnorton.surge.sh/" target="_blank">
+                <img src="./roshambo.jpg" className="thumbnail" />
+              </a>
+            </div>
+            <div>
+              <a href="http://tobiasnorton-star-wars-characters.surge.sh/" target="_blank">
+                <img src="./star-wars.jpg" className="thumbnail" />
+              </a>
+            </div>
+            <div>
+              {' '}
+              <a href="http://tobiasnorton-made-in-1989.surge.sh/" target="_blank">
+                <img src="./1989.jpg" className="thumbnail" />
+              </a>
+            </div>
           </div>
         </section>
 
