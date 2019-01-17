@@ -193,6 +193,10 @@ button {
   bottom: 30px;
 }
 
+.arrow:hover {
+  cursor: pointer;
+}
+
 .bounce {
   animation-name: bounce;
   animation-timing-function: ease;
