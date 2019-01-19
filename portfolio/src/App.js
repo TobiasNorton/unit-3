@@ -14,9 +14,19 @@ class App extends Component {
     aboutMe.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
-  showHowItWorksSection = () => {
-    let howItWorksSection = document.querySelector('.how-it-works')
-    howItWorksSection.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  showPortfolio = () => {
+    let portfolioSection = document.querySelector('.portfolio')
+    portfolioSection.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
+  showTechSkills = () => {
+    let technologies = document.querySelector('.technologies')
+    technologies.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
+  showContactMe = () => {
+    let contactMe = document.querySelector('.contact-me')
+    contactMe.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
   render() {
@@ -30,24 +40,41 @@ class App extends Component {
               <a id="home" className="menu-item" href="/">
                 Home
               </a>
-              <a id="about" className="menu-item" href="/about">
+              <a id="about" className="menu-item" onClick={this.showAboutMe}>
                 About Me
               </a>
-              <a id="contact" className="menu-item" href="/contact">
-                My Work
+              <a id="contact" className="menu-item" onClick={this.showPortfolio}>
+                Portfolio
               </a>
-              <a id="contact" className="menu-item" href="/contact">
+              <a id="contact" className="menu-item" onClick={this.showTechSkills}>
+                Tech Skills
+              </a>
+              <a
+                id="contact"
+                className="menu-item"
+                href="https://github.com/TobiasNorton"
+                target="_blank"
+              >
                 GitHub
               </a>
-              <a id="contact" className="menu-item" href="/contact">
+              <a
+                id="contact"
+                className="menu-item"
+                href="https://www.linkedin.com/in/tobiasnorton"
+                target="_blank"
+              >
                 LinkedIn
               </a>
-              <a onClick={this.showSettings} className="menu-item--small" href="">
+              <a
+                onClick={this.showSettings}
+                className="menu-item--small"
+                onClick={this.showContactMe}
+              >
                 Contact
               </a>
             </Menu>
             <p onClick={this.showAboutMe}>About Me</p>
-            <p onClick={this.showMyWorkSection}>My Work</p>
+            <p onClick={this.showPortfolio}>My Work</p>
             <a href="https://github.com/TobiasNorton" target="_blank">
               GitHub
             </a>
@@ -79,7 +106,7 @@ class App extends Component {
         </section>
 
         <section className="about-me">
-          <div className="threshold" />
+          {/* <div className="threshold" /> */}
           <div className="about-me-header">About Me</div>
           <div className="about-me-line" />
           <img src="./711.jpg" className="portrait" />
@@ -98,13 +125,13 @@ class App extends Component {
           <div className="about-me-line" />
           <div className="thumbnail-container">
             <div>
-              <a href="#">
-                <img src="./localist.jpg" className="thumbnail " />
+              <a href="http://tobiasnorton-favorite-artists.surge.sh/" target="_blank">
+                <img src="./favorite-artists-2.jpg" className="thumbnail" />
               </a>
             </div>
             <div>
-              <a href="http://tobiasnorton-favorite-artists.surge.sh/" target="_blank">
-                <img src="./favorite-artists-2.jpg" className="thumbnail" />
+              <a href="#">
+                <img src="./localist.jpg" className="thumbnail " />
               </a>
             </div>
             <div>
@@ -142,7 +169,7 @@ class App extends Component {
         </section>
 
         <section className="technologies">
-          <div className="technology-header">Technologies</div>
+          <div className="technology-header">Skills & Technologies</div>
           <div className="tech-line" />
           <div className="tech-container">
             <div className="tech">
@@ -178,82 +205,36 @@ class App extends Component {
             </div> */}
           </div>
         </section>
-
-        {/* <section className="my-work">
-          <h1 onClick={this.showMyWorkSection}>See My Work</h1>
-          <div className="box-container">
-            <div className="box">
-              <img src="./ColorPicker.gif" />
-              <p className="header">HSL Color Picker</p>
-              <p className="body">
-                This is an HSL (hue, saturation, light) color picker for CSS. It generates a random
-                color upon the click of a button and custom colors when the user drags the sliders.
-                It also displays and updates a CSS color code so that users may copy it for use in
-                their own projects. It responds to user events and uses state in React to drive
-                changes to the user interface.
-              </p>
-            </div>
-            <div className="box">
-              <img src="./Minesweeper.gif" />
-              <p className="header">Minesweeper</p>
-              <p className="body">
-                Users can choose their difficulty and play the classic Minesweeper game. Left
-                clicking or right clicking will check or flag a cell, respectively. Checking a mine
-                will result in a game over. Working with an API, the Axios library is used to POST
-                requests. The state is then updated and changes are passed down to React components
-                and the user interface updates.
-              </p>
-            </div>
-            <div className="box">
-              <img src="./Blackjack.gif" />
-              <p className="header">Blackjack</p>
-              <p className="body">
-                Blackjack! The player with the highest card sum wins. More then 21 results in a
-                loss, and equal to 21 results in an automatic win (Blackjack). When the player hits
-                the stay button, the dealer must draw until their cards total at least 17. From here
-                the dealer will either lose by going over 21, win with a high score or win with a
-                Blackjack. Built entirely with core JavaScript and no frameworks. It was assigned as
-                an exercise for using conditional logic to update DOM elements. I'm happy to say
-                that the instructor liked my CSS and code enough that he later used my project as a
-                template to demonstrate for the class how to implement React.js and a playing cards
-                API.
-              </p>
+        <section className="contact-me">
+          <div className="contact-me-header">Contact Me</div>
+          <div className="contact-line" />
+          <div>
+            <div className="contact-me-container">
+              <div className="contact">
+                <i class="fas fa-envelope" />
+                {/* <p>Email</p> */}
+                <p>tobiaswnorton@gmail.com</p>
+              </div>
+              {/* <div className="contact">
+                <i class="fab fa-github" />
+                <p>TobiasNorton</p>
+              </div> */}
+              <div className="contact">
+                <a href="https://www.linkedin.com/in/tobiasnorton" target="_blank">
+                  <i class="fab fa-linkedin" />
+                </a>
+                {/* <p>LinkedIn</p> */}
+                <p>linkedin.com/in/tobiasnorton</p>
+                <div />
+              </div>
+              <div className="contact">
+                <i class="fas fa-phone" />
+                {/* <p>Phone</p> */}
+                <p>(941)-587-9667</p>
+              </div>
             </div>
           </div>
-        </section> */}
-
-        {/* <section className="how-it-works">
-          <h1 onClick={this.showHowItWorksSection}>How Does It Work?</h1>
-          <div className="box-container">
-            <div className="box">
-              <p className="header">Create an Account</p>
-              <p className="body">
-                You will be prompted to register with Localist through either Facebook or Google for
-                authentication purposes. From there you will create a profile. After filling out the
-                necessary information, you can add dates and destinations of trips you'll be taking,
-                and Localist will take it from there.
-              </p>
-            </div>
-            <div className="box">
-              <p className="header">Browse Locals</p>
-              <p className="body">
-                Based on your travel information, you will be provided with a list of locals that
-                live in the cities you will be traveling to. You may view their profiles or request
-                to link with them. You may also receive requests from incoming travelers that are
-                planning to visit your town, at which point you may view their profile. You may
-                accept or decline any link request.
-              </p>
-            </div>
-            <div className="box">
-              <p className="header">Set Up a Time and Place to Meet</p>
-              <p className="body">
-                Once you are linked with someone, your contact information will become visible to
-                them and theirs will be visible to you. From here it's up to you two to decide how
-                and when to meet and what activities are in store!
-              </p>
-            </div>
-          </div>
-        </section> */}
+        </section>
       </body>
     )
   }
